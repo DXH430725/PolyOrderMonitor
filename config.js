@@ -31,11 +31,9 @@ function loadTelegramConfig() {
 
   for (const line of lines) {
     if (line.includes('DXHNotice:')) {
-      // Chat ID 格式: DXHNotice: -1002932618669
       const chatIdMatch = line.match(/DXHNotice:\s*(-?\d+)/);
       if (chatIdMatch) config.chatId = chatIdMatch[1];
     } else if (line.match(/^\d+:[A-Za-z0-9_-]+$/)) {
-      // Bot token 格式: 8136100232:AAEZDTI2g2FHiR1Klk7viwU8ughwED-UBcw
       config.botToken = line;
     }
   }

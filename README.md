@@ -16,7 +16,7 @@
 ### 1. polyprivate.key
 
 存储 Polymarket API 凭证。复制 `polyprivate.key.example` 并重命名为 `polyprivate.key`，然后填入你的凭证：
-使用生成密钥，需要钱包私钥，如果不放心，请参照官方文档生成：https://docs.polymarket.com/quickstart/websocket/WSS-Quickstart
+使用generateapikey.py生成密钥，需要钱包私钥，如果不放心，请参照官方文档生成：https://docs.polymarket.com/quickstart/websocket/WSS-Quickstart
 
 ```
 api_key='your-api-key',
